@@ -82,30 +82,43 @@ a:hover {
     margin-top: 3rem;
 }
 
-
+/* Add or update these footer styles */
 .main-footer {
-    background-color: var(--bg-color);
-    padding: 2rem;
+    background-color: #1a1a1a;
+    padding: 1rem 0;
     margin-top: auto;
-    border-top: 1px solid #333;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .footer-content {
+    width: 100%;
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .footer-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-info div:first-child {
+    color: #fff;
     font-size: 1rem;
-    line-height: 1.5;
 }
 
 .position {
     color: #888;
     font-size: 0.9rem;
+    margin-top: 0.2rem;
 }
 
 .social-links {
@@ -114,7 +127,7 @@ a:hover {
 }
 
 .social-links a {
-    color: var(--text-color);
+    color: #fff;
     font-size: 1.2rem;
     opacity: 0.9;
     transition: opacity 0.2s ease;
@@ -122,7 +135,13 @@ a:hover {
 
 .social-links a:hover {
     opacity: 1;
+    color: #fff;
     text-decoration: none;
+}
+
+/* Add some bottom padding to the container to prevent content from being hidden behind the fixed footer */
+.container {
+    padding-bottom: 5rem;
 }
 
 @media (max-width: 768px) {
@@ -130,6 +149,7 @@ a:hover {
         flex-direction: column;
         text-align: center;
         gap: 1rem;
+        padding: 1rem 2rem;
     }
     
     .social-links {
