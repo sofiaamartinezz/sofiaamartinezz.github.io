@@ -82,24 +82,18 @@ a:hover {
     margin-top: 3rem;
 }
 
-/* Add or update these footer styles */
 .main-footer {
     background-color: #1a1a1a;
-    padding: 1rem 0;
+    padding: 1.5rem 0;
     margin-top: auto;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    border-top: 1px solid #333;  /* Division line */
 }
 
 .footer-content {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 2rem;
+    padding: 0 4rem;  /* Increased side margins */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -108,27 +102,28 @@ a:hover {
 .footer-info {
     display: flex;
     flex-direction: column;
+    gap: 0.25rem;
 }
 
 .footer-info div:first-child {
     color: #fff;
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
 
 .position {
     color: #888;
-    font-size: 0.9rem;
-    margin-top: 0.2rem;
+    font-size: 0.95rem;
 }
+
 
 .social-links {
     display: flex;
-    gap: 1.5rem;
+    gap: 2rem;  /* Increased gap between icons */
 }
 
 .social-links a {
     color: #fff;
-    font-size: 1.2rem;
+    font-size: 1.5rem;  /* Larger icons */
     opacity: 0.9;
     transition: opacity 0.2s ease;
 }
@@ -139,20 +134,16 @@ a:hover {
     text-decoration: none;
 }
 
-/* Add some bottom padding to the container to prevent content from being hidden behind the fixed footer */
 .container {
     padding-bottom: 5rem;
 }
 
 @media (max-width: 768px) {
     .footer-content {
-        flex-direction: column;
-        text-align: center;
-        gap: 1rem;
-        padding: 1rem 2rem;
+        padding: 0 2rem;  /* Smaller padding on mobile */
     }
     
     .social-links {
-        justify-content: center;
+        gap: 1.5rem;  /* Slightly reduced gap on mobile */
     }
 }
