@@ -82,10 +82,12 @@ a:hover {
     margin-top: 3rem;
 }
 
+
 .main-footer {
-    background-color: var(--footer-bg);
-    padding: 1.5rem 2rem;
+    background-color: var(--bg-color);
+    padding: 2rem;
     margin-top: auto;
+    border-top: 1px solid #333;
 }
 
 .footer-content {
@@ -96,16 +98,14 @@ a:hover {
     align-items: center;
 }
 
-.footer-left h3 {
-    margin: 0;
-    font-size: 1.2rem;
-    font-weight: normal;
+.footer-info {
+    font-size: 1rem;
+    line-height: 1.5;
 }
 
-.footer-left p {
-    margin: 0.25rem 0 0 0;
+.position {
+    color: #888;
     font-size: 0.9rem;
-    opacity: 0.8;
 }
 
 .social-links {
@@ -115,24 +115,17 @@ a:hover {
 
 .social-links a {
     color: var(--text-color);
-    font-size: 1.25rem;
-    transition: color 0.3s ease;
+    font-size: 1.2rem;
+    opacity: 0.9;
+    transition: opacity 0.2s ease;
 }
 
 .social-links a:hover {
-    color: var(--link-color);
+    opacity: 1;
     text-decoration: none;
 }
 
 @media (max-width: 768px) {
-    .about-section {
-        grid-template-columns: 1fr;
-    }
-    
-    .nav-links {
-        gap: 1rem;
-    }
-    
     .footer-content {
         flex-direction: column;
         text-align: center;
